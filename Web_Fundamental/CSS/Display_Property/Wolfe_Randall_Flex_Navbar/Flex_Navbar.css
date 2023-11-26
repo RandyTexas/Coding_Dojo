@@ -1,0 +1,38 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 50px;
+    background-color: gray;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-title{
+    align-items: center;
+    justify-content: start;
+    color: aliceblue;
+    margin: 10px;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+.active{
+    color: white;
+    font-weight: 500;
+}
+.btn{
+    box-shadow: 3px 3px black;
+    background-color: lightblue;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-weight: lighter;
+}

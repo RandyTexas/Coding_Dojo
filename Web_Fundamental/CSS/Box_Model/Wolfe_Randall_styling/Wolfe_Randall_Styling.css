@@ -1,0 +1,19 @@
+h1{
+    
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rebeccapurple;
+    color: white;
+}
+h3{
+    text-decoration: underline;
+    text-align:end;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    background-color:skyblue
+}

@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    background-color: snow;
+}
+
+
+
+.navbar{
+    display: flex;
+    align-content: center;
+    justify-content:space-around;
+    align-items: center;
+    background-color:black;
+    color: white;
+    margin-bottom: 10px;
+    
+}
+.profile{
+    font-weight: bold;
+    font-size: xx-large;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.signout{
+    background-color:aqua;
+    color: aliceblue;
+}
+
+
+
+
+
+
+.col{
+    display: flex;
+    margin: 0 110px;
+}
+
+.col1{
+    display: inline-block;
+    width: 60%;
+    margin-right: 10px;
+}
+
+
+
+.box1{
+    background-color: whitesmoke;
+}
+.topbar{
+    background-color: lightseagreen;
+    height: 150px;
+}
+.info{
+    display: block;
+    margin: 5%;
+    position: relative;
+    top: -120px;
+    overflow: hidden;
+}
+.pic{
+    height:175px;
+    width: 175px;
+    border-radius: 50%;
+}
+.location{
+    display: inline-flex;
+    font: bold;
+    font-weight: bold;
+}
+.edit{
+    display: flex;
+}
+.icon{
+    height: 20px;
+    padding-right: 9px;
+}
+
+
+
+.box2{
+    background-color: whitesmoke;
+}
+.edu{
+    background-color: black;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 25px;
+}
+.school{
+    display: block;
+    padding-left: 15px;
+    padding-bottom:15px ;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+.col2{
+    width: 40%;
+    margin-left: 10px;
+}
+
+
+
+.friendrequest{
+    background-color: whitesmoke;
+    overflow: auto;
+    margin-bottom: 25px;
+}
+.bar{
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+    background-color: black;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+#line, line2{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 50px;
+    border-radius: 50%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#line2{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 50px;
+    border-radius: 50%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.tod{
+    height: 60px;
+    border-radius: 50%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.circle{
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px 10px;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.center{
+    padding: 15px 0;
+    overflow: hidden;
+}
+
+
+
+.friendlist{
+    background-color:whitesmoke;
+}
+.tod2{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-radius: 50%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+

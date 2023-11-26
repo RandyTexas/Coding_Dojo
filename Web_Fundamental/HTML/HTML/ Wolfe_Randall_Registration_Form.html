@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+<h1>Registration Form</h1>
+
+<div>
+    First Name: *<input type="text" name="FirstName">
+</div>
+
+<div>
+    Last Name: *<input type="text" name="LastName">
+</div>
+
+<div>
+    Email Address: *<input type="email" name="Email" id="Email">
+</div>
+
+<div>
+    Password: *<input type="password" name="Password" id="Password">
+</div>
+
+<div>
+    Confirm Password: *<input type="password" name="ConfirmPassword">
+</div>
+
+<div>
+    Birthday:<input type="date" name="Birthday">
+</div>
+
+
+
+<p>Gender Idenity:</p>
+<div>
+    <input type="radio" name="Gender" value="Male"> Male
+    <input type="radio" name="Gender" value="Female"> Female
+    <input type="radio" name="Gender" value="NonBi"> Non-binary
+    <input type="radio" name="Gender" value="N/A"> I prefer not to answer
+</div>
+
+<p>A short description about myself:</p>
+<textarea name="AboutMe" id="AboutMe" cols="30" rows="3"></textarea>
+
+<div>
+    Favorite Language: 
+    <select name="FavLang">
+        <option value="Python">Python</option>
+        <option value="C++">C++</option>
+        <option value="C">C</option>
+        <option value="PHP">PHP</option>
+        <option value="Java">Java</option>
+        <option value="SQL">SQL</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Ruby">Ruby</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+    </select>
+</div>
+
+
+<div>
+    <input type="checkbox" name="EmailSubs" value="yes"> Yes, I would like to receive periodic email updates
+</div>
+
+<div>
+    <input type="submit" value="Create Account">
+</div>
+
+<p><em>* Indicates a required field</em></p>
+
+</html>
+

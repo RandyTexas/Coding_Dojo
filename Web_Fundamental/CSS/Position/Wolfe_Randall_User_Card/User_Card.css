@@ -1,0 +1,44 @@
+.background{
+    background-color:bisque;
+    border-style: solid;
+    border-color: gray;
+    border-width: px;
+    margin: 0 auto;
+    width: 75%;
+}
+.topbar{
+    background-color: darkcyan;
+    height: 150px;
+    margin-bottom: -145px;
+}
+.info{
+    display: block;
+    padding: 4%;
+}
+.namegroup{
+    display: block;
+}
+.pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.name{
+    bottom: 100px;
+    font-style: oblique;
+}
+.location{
+    align-content: center;
+    margin-left: 10px;
+}
+.icon{
+    height: 18px;
+    margin-right: 10px;
+}
+.edit{
+    display: flex;
+    align-content: center;
+}
+.gearicon{
+    height: 20px;
+}

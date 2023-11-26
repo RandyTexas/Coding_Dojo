@@ -1,0 +1,77 @@
+body{
+    margin: 0 150px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: gray;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+.navtitle{
+    margin-left: 10px;
+    flex: 1 20%;
+}
+.navlinks{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 2 90%;
+    margin: 10px;
+    list-style: none;
+    text-decoration: none;
+    overflow: hidden;
+
+}
+.login{
+    box-shadow: 4px 4px 4px silver;
+    background-color: rgb(108, 146, 151);
+    color: white;
+    width: 75px;
+}
+
+
+.col{
+    display: flex;
+    gap: 30px;
+}
+
+
+
+.col1{
+    flex: 2;
+    order: 2;
+}
+.ninja{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    margin-bottom: 25px;
+    padding: 25px;
+    overflow: hidden;
+}
+.it{
+    font-weight: bolder;
+}
+
+
+
+
+.col2{
+    flex: 1;
+    order: 1;
+}
+.dojo{
+    display: flex;
+    flex-direction: column;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    padding: 20px;
+}
+.btn{
+    width: auto;
+}

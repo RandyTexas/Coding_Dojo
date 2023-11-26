@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yellow Belt</title>
+    <link rel="stylesheet" href="./Yellow_Belt.css">
+</head>
+<!-- background is the big box in the back that everything goes into! -->
+<body class="background">
+    <!-- This is the Top navgation bar that has the header and form -->
+    <div class="navBar">
+        <div class="marginArea">
+            <!-- This would be for the Logo and name  that would be placed in the top box to in the navBar box!  -->
+            <div class="petLogo">
+                <div class="pet">
+                    <img src="./Pictures/heart-light.png" alt="Picture of a White Heart">
+                    <h1>Pet Shelter</h1>
+                </div>
+                <!-- This is for the header section  -->
+                <div class="navLinks">
+                    <div class="linkTags">
+                        <h2><a href="#" class="linkTags">Find a Pet</a></h2>
+                        <h2><a href="#" class="linkTags">About</a></h2>
+                    </div>
+                    <button onclick="donate(this)" id="help">Donate</button>
+                </div>
+            </div>
+            <!-- This is the bottom half of the navBar that area collects data about the user-->
+            <form class="data">
+                <!-- This section asks what kind of pet you are looking for -->
+                
+                    <div class="petChoice">
+                        <p>I'm Looking for a...</p>
+                        <div class="petSelection">
+                            <img src="./Pictures/paw-light.png" alt="Pictire of a paw print">
+                            <select onchange="change(this)" name="catDog" id="catDog">
+                                <option value="anyPet">Any Pet</option>
+                                <option value="Dog">Dog</option>
+                                <option value="Cat">Cat</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- This section asks in what area are you looking for this pet? -->
+                    <div class="petLocation">
+                        <p>in or near...</p>
+                        <div class="petArea">
+                            <img src="./Pictures/pin-light.png" alt="Map Pin">
+                            <textarea name="location" id="area" cols="30" rows="2" placeholder="City or Zip Code"></textarea>
+                        </div>
+                    </div>
+                <!-- This is just a button clicker for now has no purpose at the moment -->
+                <button class="find">Find your new best friend</button>
+            </form>
+        </div>
+    </div>
+    <!-- This is the Big box under the navBar that has the content inside! -->
+    <div class="col">
+        <!--This is Pepper Box Area -->
+        <div class="row">
+            <!-- This box give you the picture, name and info about Pepper -->
+            <div class="info">
+                <img src="./Pictures/pepper.jpg" alt="A grey and white cat sleeping on something white.">
+                <div class="name">
+                    <h3>Pepper</h3>
+                    <p>Pepper is slightly shy grey tabby, but she loves to show her human affection.</p>
+                </div>
+            </div>
+            <!-- This area is to add likes to the number when button is clicked! -->
+            <div class="petButton">
+                <p id="pepper">3 petting(s)</p>
+                <button onclick="addpepper(this)" class="petting">Pet Pepper</button>
+            </div>
+        </div>
+        <!-- This is Bruce Box Area -->
+        <div class="row">
+            <!-- This box give you the picture, name and info about Bruce -->
+            <div class="info">
+                <img src="./Pictures/bruce.jpg" alt="Picture of Bruce he a beautil long brown haired Dog">
+                <div class="name">
+                    <h3>Bruce</h3>
+                    <p>Bruce is a loyal companion. He love long walks and cold weather.</p>
+                </div>
+            </div>
+            <!-- This area is to add likes to the number when button is clicked! -->
+            <div class="petButton">
+                <p id="bruce">5 petting(s)</p>
+                <button onclick="addBruce(this)" class="petting">Pet Bruce</button>
+            </div>
+        </div>
+        <!-- This is Oscar Box Area -->
+        <div class="row">
+            <div class="info">
+                <!-- This box give you the picture, name and info about Oscar -->
+                <img src="./Pictures/oscar.jpg" alt="Picture of Oscar he a Black and white Puppy">
+                <div class="name">
+                    <h3>Oscar</h3>
+                    <p>Oscar is bright, energetic and friendly, He is looking for a good time.</p>
+                </div>
+            </div>
+            <!-- This area is to add likes to the number when button is clicked! -->
+            <div class="petButton">
+                <p id="oscar">5 petting(s)</p>
+                <button onclick="addOscar(this)" class="petting">Pet Oscar</button>
+            </div>
+        </div>
+    </div>
+    <script src="./Yellow_Belt.js"></script>
+</body>
+</html>

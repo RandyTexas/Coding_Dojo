@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    background-color: white;
+}
+
+
+/* the background of the navBar */
+.navBar{
+    background-color: darkcyan;
+}
+/* What inside the navBar */
+.marginArea{
+    margin: 0 20%;
+    padding: 10px;
+}
+/* Top Part of the navBar */
+.petLogo{
+    display: flex;
+    justify-content: space-between;
+}
+/* This is on the top left corner of the navBar */
+.pet{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.pet img{
+    margin-right: 10px;
+}
+/* This is on the top right of the navBar corner */
+.navLinks{ 
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+/* Has all the a tags and button in it */
+.linkTags{
+    display: flex;
+    margin-left: 20px;
+}
+#help{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: larger;
+}
+/* This Target only the a tag */
+.navLinks a{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    text-decoration: none;
+    color: black;
+}
+#help{
+    color: blueviolet;
+    border-color: blueviolet;
+    border-radius: 50%;
+    width: 100px;
+}
+
+
+/* bottom half of the navBar */
+.data{
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    height: 25px;
+}
+
+/* Is the selection box */
+.petChoice{
+    flex: 1;
+    color: white;
+}
+.petChoice img{
+    height: 25px;
+}
+/* Is the selection box */
+.petSelection{
+    display: flex;
+}
+/* This is the Selection option */
+#catDog{
+    width: 150px;
+    height: 25px;
+}
+
+
+/* Is the Location box */
+.petLocation{
+    flex: 1;
+    color: white;
+}
+.petLocation img{
+    height: 25px;
+}
+/* Is the text area box info */
+.petArea{
+display: flex;
+}
+/* This is the Texaarea box */
+#area{
+    height: 25px;
+}
+
+
+/* This is the button */
+.find{
+    flex:1;
+    background-color: blueviolet;
+    color: white;
+    height: 25px;
+}
+
+
+
+/* Is the bib box uner the navBar that contain the rows */
+.col{
+    margin: 0 20%;
+}
+
+/* This is the box that contain information of each pet */
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgray;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 25px;
+    height: 150px;
+}
+.row img{
+    height: 150px;
+}
+/* This is the left half of the  row box */
+.info{
+    display: flex;
+    align-items: center;
+}
+/* Is the text of the pet and breif information on them */
+.name{
+    margin-left: 10px;
+}
+/* This is the right half of row box and has the button */
+.petButton{
+    display: flex;
+    flex-direction: column;
+    width: 175px;
+}
+.petButton p{
+    position: relative;
+    top: 0;
+    right: -100px;
+    margin-bottom: 25px;
+}
+/* This is the Button */
+.petting{
+    background-color: cyan;
+    color: white;
+    height: 25px;
+}

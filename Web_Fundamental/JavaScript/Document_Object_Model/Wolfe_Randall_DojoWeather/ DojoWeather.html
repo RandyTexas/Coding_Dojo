@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="./DojoWeather.css">
+</head>
+<body>
+    <div class="navBar">
+        <div class="space">
+            <h2>DojoWeather</h2>
+            <div class="city">
+                <h4 onclick="burbank(this)">Burbank</h4>
+                <h4 onclick="chicago(this)">Chicago</h4>
+                <h4 onclick="dallas(this)">Dallas</h4>
+            </div>
+        </div>
+    </div>
+    <div class="topBar">
+        <h1>San Jose</h1>
+        <p>Show temperature in 
+            <select name="temp" onchange="changetemp()" id="temp">
+            <option value="C" onclick="changetemp()">C</option>
+            <option value="F" onclick="changetemp()">F</option>
+            </select>
+        </p>
+        <hr>
+    </div>
+    <div class="col">
+        <div class="row">
+            <p>Today</p>
+            <img src="./Pictures/some_rain.png" alt="Rainy Cloud">
+            <p>some rain</p>
+            <div class="highLow">
+                <p class="red">24</p>
+                <p class="blue">18</p>
+            </div>
+        </div>
+        <div class="row">
+            <p>Tomorrow</p>
+            <img src="./Pictures/some_sun.png" alt="The Sun">
+            <p>some sun</p>
+            <div class="highLow">
+                <p class="red">27</p>
+                <p class="blue">19</p>
+            </div>
+        </div>
+        <div class="row">
+            <p>Friday</p>
+            <img src="./Pictures/some_clouds.png" alt="Cloudy Clouds">
+            <p>some clouds</p>
+            <div class="highLow">
+                <p class="red">21</p>
+                <p class="blue">16</p>
+            </div>
+        </div>
+        <div class="row">
+            <p>Saturday</p>
+            <img src="./Pictures/some_sun.png" alt="">
+            <p>some sun</p>
+            <div class="highLow">
+                <p class="red">26</p>
+                <p class="blue">21</p>
+            </div>
+        </div>
+    </div>
+    <div id="cookie">
+        <img src="./Pictures/cookie.png" alt="Picture of a cookie" height="100px">
+        <div>
+            <p>Stop! Cookie time</p>
+            <p>We use cookies (sadly not the edible one) to personalize content and ads, to provide social media features and to analyse our traffic.  <a href="#">Read more...</a></p>
+        </div>
+        <button onclick="byecookie(this)" class="cookie">I Accept</button>
+    </div>
+    <script src="./DojoWeather.js"></script>
+</body>
+</html>

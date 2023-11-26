@@ -1,0 +1,23 @@
+#search{
+    margin: 10px 20px;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}    
+
+#plus{
+    margin: 5px  20px;
+    border-radius: 50%; 
+    width: 30px;
+    height: 30px;
+    background: turquoise;
+}
+
+#create{
+    margin: 10px 20px;
+    height: 30px;
+    background-color:royalblue;
+    box-shadow: 3px 3px silver
+}
