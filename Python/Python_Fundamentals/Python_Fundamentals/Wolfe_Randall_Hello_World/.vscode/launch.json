@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/randallwolfe/Desktop/Coding_Dojo/Python/Python_Fundamentals/Python_Fundamentals/Wolfe_Randall_Hello_World",
+      "program": "/Users/randallwolfe/Desktop/Coding_Dojo/Python/Python_Fundamentals/Python_Fundamentals/Wolfe_Randall_Hello_World/build/Debug/outDebug"
+    }
+  ]
+}
