@@ -3,7 +3,7 @@ for x in range(151):
     print(x)
 
 # 2 Multiples of Five - Print all the multiples of 5 from 5 to 1,000
-for x in range(5, 1001, 5):
+for x in range(5, 1005, 5):
     print(x)
 
 # 3 Counting, the Dojo Way - Print integers 1 to 100. If divisible by 5, print "Coding" instead. If divisible by 10, print "Coding Dojo".
