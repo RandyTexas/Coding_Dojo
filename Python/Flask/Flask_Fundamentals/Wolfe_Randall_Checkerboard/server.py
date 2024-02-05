@@ -5,12 +5,12 @@ app = Flask(__name__)
 # http://localhost:8000 - should display 8 by 8 checkerboard
 @app.route('/')
 def main():
-    return render_template('index.html', x=4, y=4, color1="black", color2="grey")
+    return render_template('index.html', x=8, y=8, color1="black", color2="grey")
 
 # http://localhost:8000/4 - should display 8 by 4 checkerboard
 @app.route('/<int:rows>')
 def rows(rows):
-    return render_template('index.html', x=rows, y=4, color1="black", color2="grey")
+    return render_template('index.html', x=rows, y=8, color1="black", color2="grey")
 
 # http://localhost:8000/x/y - should display x by y checkerboard
 @app.route('/<int:rows>/<int:cols>')
