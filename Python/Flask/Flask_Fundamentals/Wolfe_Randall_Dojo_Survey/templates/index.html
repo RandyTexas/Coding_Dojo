@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <h1>Dojo Survey</h1>
+    <form action="/survey" method="post">
+        <label for="name">First name:</label>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="locations">Dojo Locations:</label>
+        <select name="locations" id="locations" required>
+            <option value="">--Select One--</option>
+            <option value="EST">Eastern Standard Time</option>
+            <option value="CST">Central Standard Time</option>
+            <option value="MT">Mountain Time</option>
+            <option value="PST">Pacific Standard Time</option>
+        </select><br>
+        
+        <label for="language">Languages:</label>
+        <select name="language" id="languages" required>
+            <option value="">--Select One--</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+        </select><br>
+        
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" placeholder="Enter your comment here"></textarea><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
