@@ -18,8 +18,8 @@
       "relationship": true
     },
     "database": "MySQL",
-    "databaseName": "Users",
-    "canvasType": "@vuerd/builtin-sql-ddl",
+    "databaseName": "CRUD_User",
+    "canvasType": "ERD",
     "language": "GraphQL",
     "tableCase": "pascalCase",
     "columnCase": "camelCase",
@@ -67,7 +67,7 @@
               "widthDataType": 60,
               "widthDefault": 60
             },
-            "id": "418da120-346b-4777-abbc-c695bc8a99b3"
+            "id": "81a413c1-42c5-4c2b-8be6-6e7b3f3b7c00"
           },
           {
             "name": "created_at",
@@ -85,18 +85,18 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 67.0634765625,
+              "widthName": 63.4326171875,
               "widthComment": 60,
               "widthDataType": 61.9599609375,
               "widthDefault": 147.65966796875
             },
-            "id": "3a1fc3da-f54e-46b4-8569-b5b13712aabb"
+            "id": "04818b14-4668-4b2e-bbdd-088460b39aab"
           },
           {
             "name": "updated_at",
             "comment": "",
             "dataType": "timestamp",
-            "default": "CURRNET_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
+            "default": "CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP",
             "option": {
               "autoIncrement": false,
               "primaryKey": false,
@@ -108,12 +108,12 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 60,
+              "widthName": 67.0634765625,
               "widthComment": 60,
-              "widthDataType": 60,
+              "widthDataType": 61.9599609375,
               "widthDefault": 375.42626953125
             },
-            "id": "9080e847-08a6-40d9-87f0-a42daa24c7b7"
+            "id": "fb096b6e-0fc5-4d27-953a-431dff6ca6e4"
           },
           {
             "name": "first_name",
@@ -136,7 +136,7 @@
               "widthDataType": 87.72509765625,
               "widthDefault": 60
             },
-            "id": "e5f782eb-e4d4-434a-a5c7-9e50b865f798"
+            "id": "4eb86268-13f1-4a45-9b45-d2ec14af2953"
           },
           {
             "name": "last_name",
@@ -159,7 +159,7 @@
               "widthDataType": 87.72509765625,
               "widthDefault": 60
             },
-            "id": "741e596f-b3c4-4385-a406-e826da220ecd"
+            "id": "5162f724-2886-45fb-89fd-daaac5bad016"
           },
           {
             "name": "email",
@@ -182,19 +182,19 @@
               "widthDataType": 94.955078125,
               "widthDefault": 60
             },
-            "id": "970c3f00-13ac-41b9-a520-7ffd8e9722fd"
+            "id": "22629133-350d-4bb5-96ac-164fd5514749"
           }
         ],
         "ui": {
           "active": false,
           "left": 200,
           "top": 100,
-          "zIndex": 44,
+          "zIndex": 1,
           "widthName": 60,
           "widthComment": 60
         },
         "visible": true,
-        "id": "8fa0997e-a19a-4e00-933e-5b3fa5194efe"
+        "id": "071cc381-2af6-43c1-a934-a36cff727d08"
       }
     ],
     "indexes": []

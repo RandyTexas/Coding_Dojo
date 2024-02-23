@@ -42,7 +42,7 @@ class Friend:
     @classmethod
     def save(cls, data):
         query = """INSERT INTO friends (first_name, last_name, occupation)
-    	VALUES (%(first_name)s, %(last_name)s, %(occupation)s);"""
+        VALUES (%(first_name)s, %(last_name)s, %(occupation)s);"""
         result = connectToMySQL(cls.DB).query_db(query,data)
         return result
 
@@ -53,5 +53,20 @@ class Friend:
         data = {'id': friend_id}
         results = connectToMySQL(cls.DB).query_db(query, data)
         return cls(results[0])
+    
+    
+    @classmethod
+    def update(cls,data):
+        query = """UPDATE friends 
+                SET first_name=%(first_name)s,last_name=%(last_name)s,email=%(email)s, occupation=%(occupation)s 
+                WHERE id = %(id)s;"""
+        return connectToMySQL(cls.DB).query_db(query,data)
+
+    # the delete method will be used when we need to delete a friend from our database
+    @classmethod
+    def delete(cls, friend_id):
+        query  = "DELETE FROM friends WHERE id = %(id)s;"
+        data = {"id": friend_id}
+        return connectToMySQL(cls.DB).query_db(query, data)
 
 
