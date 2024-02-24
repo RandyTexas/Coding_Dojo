@@ -7,5 +7,22 @@
 </head>
 <body>
     <h1>New Ninja</h1>
+    <form action="/ninja_create" method="post">
+        <label for="lable">Dojo: </label>
+        <select name="dojo_id">
+        {% for dojo in dojos %}
+            <option value="{{dojo.id}}" >{{dojo.location}}</option>
+        {% endfor %}
+        </select><br>
+        <label for="first_name">First Name: </label>
+        <input name="first_name" type="text"><br>
+        <label for="last_name">Last name: </label>
+        <input name="last_name" type="text"><br>
+        <label for="age">Age: </label>
+        <input name="age" type="text"><br>
+        <input type="submit" placeholder="Create">
+    </form>
+
+    <a href="/">Home</a>
 </body>
 </html>

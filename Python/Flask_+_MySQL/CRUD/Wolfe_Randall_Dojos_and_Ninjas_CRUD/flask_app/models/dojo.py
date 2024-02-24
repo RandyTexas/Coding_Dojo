@@ -6,6 +6,7 @@ from flask_app.config.mysqlconnection import connectToMySQL
 
 class Dojo:
     def __init__(self, data):
+        print("from class",data)
         self.id = data['id']
         self.location = data['location']
         self.created_at = data['created_at']
@@ -14,46 +15,37 @@ class Dojo:
 
     @classmethod
     def get_all(cls):
-        query = "SELECT * FROM dojos;"
+        query = "SELECT * FROM dojo;"
         results = connectToMySQL('Dojos_and_Ninjas_CRUD').query_db(query)
-        dojos = results
         dojos = []
         for dojo in results:
             dojos.append(cls(dojo))
         return dojos
 
-    @classmethod
-    def get_all(cls):
-        query = "SELECT * FROM users;"
-        results = connectToMySQL('CURD_User').query_db(query)
-        users = results
-        users = []
-        for user in results:
-            users.append(cls(user))
-        return users
 
 
 
     @classmethod
     def save(cls, data):
-        query = "INSERT INTO dojos (name, created_at, updated_at) VALUES (%(name)s, NOW(), NOW());"
+        query = "INSERT INTO dojo (location) VALUES (%(location)s);"
         return connectToMySQL('Dojos_and_Ninjas_CRUD').query_db(query, data)
 
     @classmethod
     def get_one(cls, data):
-        query = """SELECT * FROM dojos LEFT JOIN ninjas ON dojos.id = ninjas.dojo_id 
-        WHERE dojos.id = %(id)s;"""""
+        query = """SELECT * FROM dojo LEFT JOIN ninja ON dojo.id = ninja.dojo_id 
+        WHERE dojo.id = %(id)s;""" 
         
         results = connectToMySQL('Dojos_and_Ninjas_CRUD').query_db(query, data)
         dojo = cls(results[0])
+        
         for row in results:
             ninja_data = {
-                "id": row['ninjas.id'],
+                "id": row['ninja.id'],
                 "first_name": row['first_name'],
                 "last_name": row['last_name'],
                 "age": row['age'],
-                "created_at": row['ninjas.created_at'],
-                "updated_at": row['ninjas.updated_at'],
+                "created_at": row['ninja.created_at'],
+                "updated_at": row['ninja.updated_at'],
                 "dojo_id": row['dojo_id']
             }
             dojo.ninjas.append(Ninja(ninja_data))

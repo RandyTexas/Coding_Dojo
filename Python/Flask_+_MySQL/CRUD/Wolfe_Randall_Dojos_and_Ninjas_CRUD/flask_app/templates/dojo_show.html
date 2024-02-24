@@ -6,6 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>{{}}Ninjas</h1>
+    <h1>{{dojo.location}} Ninjas</h1>
+    <a href="/">Home</a>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for ninja in dojo.ninjas %}
+            <tr>
+                <td>{{ninja.first_name}}</td>
+                <td>{{ninja.last_name}}</td>
+                <td>{{ninja.age}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="/ninja">Add Ninja</a>
 </body>
 </html>
+
+

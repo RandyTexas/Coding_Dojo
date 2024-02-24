@@ -15,7 +15,7 @@ class Ninja:
 
     @classmethod
     def get_all(cls):
-        query = "SELECT * FROM ninjas;"
+        query = "SELECT * FROM ninja;"
         results = connectToMySQL('Dojos_and_Ninjas_CRUD').query_db(query)
         ninjas = []
         for ninja in results:
@@ -24,25 +24,25 @@ class Ninja:
 
     @classmethod
     def save(cls, data):
-        query = """INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id) 
-        VALUES (%(first_name)s, %(last_name)s, %(age)s, NOW(), NOW(), %(dojo_id)s);"""""
+        query = """INSERT INTO ninja (first_name, last_name, age, created_at, updated_at, dojo_id) 
+        VALUES (%(first_name)s, %(last_name)s, %(age)s, NOW(), NOW(), %(dojo_id)s);"""
         
         return connectToMySQL('Dojos_and_Ninjas_CRUD').query_db(query, data)
 
-    @classmethod
-    def get_one(cls, data):
-        from flask_app.models.dojo import Dojo
+    # @classmethod
+    # def get_one(cls, data):
+    #     from flask_app.models.dojo import Dojo
         
-        query = """SELECT * FROM ninjas LEFT JOIN dojos ON ninjas.dojo_id = dojos.id 
-        WHERE ninjas.id = %(id)s;"""""
+    #     query = """SELECT * FROM ninja LEFT JOIN dojo ON ninja.dojo_id = dojo.id 
+    #     WHERE ninja.id = %(id)s;"""
         
-        results = connectToMySQL('Dojos_and_Ninjas_CRUD').query_db(query, data)
-        ninja = cls(results[0])
-        dojo_data = {
-            "id": results[0]['dojos.id'],
-            "location": results[0]['location'],
-            "created_at": results[0]['dojos.created_at'],
-            "updated_at": results[0]['dojos.updated_at']
-        }
-        ninja.dojo = Dojo(dojo_data)
-        return ninja
+    #     results = connectToMySQL('Dojos_and_Ninjas_CRUD').query_db(query, data)
+    #     ninja = cls(results[0])
+    #     dojo_data = {
+    #         "id": results[0]['dojo.id'],
+    #         "location": results[0]['location'],
+    #         "created_at": results[0]['dojo.created_at'],
+    #         "updated_at": results[0]['dojo.updated_at']
+    #     }
+    #     ninja.dojo = Dojo(dojo_data)
+    #     return ninja

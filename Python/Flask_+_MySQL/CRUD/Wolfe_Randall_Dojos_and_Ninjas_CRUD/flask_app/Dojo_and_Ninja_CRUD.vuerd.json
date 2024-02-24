@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": 0,
-    "scrollLeft": 0,
+    "scrollTop": -77,
+    "scrollLeft": -1,
     "zoomLevel": 1,
     "show": {
       "tableComment": true,
@@ -143,7 +143,7 @@
           "active": false,
           "left": 66,
           "top": 30,
-          "zIndex": 1,
+          "zIndex": 10,
           "widthName": 60,
           "widthComment": 60
         },
@@ -224,29 +224,6 @@
             "id": "9b412185-cf4a-4410-8dbe-84274302622d"
           },
           {
-            "name": "dojo_id",
-            "comment": "",
-            "dataType": "INT",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": true,
-              "pfk": false,
-              "widthName": 60,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "bff40b96-3ef3-4c66-be53-d53218621e4f"
-          },
-          {
             "name": "first_name",
             "comment": "",
             "dataType": "VARCHAR(50)",
@@ -314,13 +291,36 @@
               "widthDefault": 60
             },
             "id": "75c24683-a601-4b9a-ad04-f055dc57a93f"
+          },
+          {
+            "name": "dojo_id",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "4352ad8a-8a98-4890-ae36-e3cbb323858c"
           }
         ],
         "ui": {
-          "active": true,
-          "left": 68,
-          "top": 267,
-          "zIndex": 3,
+          "active": false,
+          "left": 61,
+          "top": 344,
+          "zIndex": 14,
           "widthName": 60,
           "widthComment": 60
         },
@@ -351,15 +351,15 @@
         "end": {
           "tableId": "b1554b5c-0249-4c62-b083-25935cfc11f0",
           "columnIds": [
-            "bff40b96-3ef3-4c66-be53-d53218621e4f"
+            "4352ad8a-8a98-4890-ae36-e3cbb323858c"
           ],
-          "x": 416.607421875,
-          "y": 267,
+          "x": 409.607421875,
+          "y": 344,
           "direction": "top"
         },
         "constraintName": "fk_dojo_to_ninja",
         "visible": true,
-        "id": "54719d8b-43a9-4d52-9923-1d75f6e97e50"
+        "id": "71dfbfb3-dcce-46e4-a66e-dbb305eba16d"
       }
     ]
   }
