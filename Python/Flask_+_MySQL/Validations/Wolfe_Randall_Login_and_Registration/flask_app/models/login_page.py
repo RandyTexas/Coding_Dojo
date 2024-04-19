@@ -41,6 +41,7 @@ class User:
             
         if len(data["email"]) < 2:
             is_valid = False
+            
         if len(data["password"]) < 3:
             is_valid = False
             flash("Invalid password!")
